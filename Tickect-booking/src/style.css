@@ -1,0 +1,203 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@400;500&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #1E40AF, #14B8A6);
+  color: #661010;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(117, 93, 93, 0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+.navbar h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FBBF24;
+}
+
+.navbar a {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #3d326a;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+  color: #b44141;
+  transform: scale(1.1);
+}
+
+.navbar .globe {
+  animation: spin 6s linear infinite;
+}
+
+/* Home Page Styles */
+.home-hero {
+  background: rgba(110, 175, 25, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.home-list {
+  background: #34D399;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-list h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #1E40AF;
+}
+
+.home-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-list li {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+.home-list li:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Login, Signup, Booking Styles */
+.auth-container, .booking-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.auth-container h2, .booking-container h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.75rem;
+  color: #FBBF24;
+  text-align: center;
+}
+
+.auth-container input, .booking-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #FFFFFF;
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.3);
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+.auth-container button, .booking-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #FBBF24;
+  border: none;
+  border-radius: 0.25rem;
+  color: #1E40AF;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover, .booking-container button:hover {
+  background: #F59E0B;
+}
+
+/* Package Styles */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.package-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.package-card h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #34D399;
+}
+
+.package-card p {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0 1rem 1rem;
+  color: #FFFFFF;
+}
+
+.package-card a {
+  display: block;
+  text-align: center;
+  padding: 0.75rem;
+  background: #FBBF24;
+  color: #1E40AF;
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 0.25rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: background 0.3s;
+}
+
+.package-card a:hover {
+  background: #F59E0B;
+}
+
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
